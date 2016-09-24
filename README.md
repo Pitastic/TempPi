@@ -24,8 +24,3 @@ Nur für Anschlüsse an die GPIO Schnittstelle
 
 - Temperatursensor
 - Feuchtigkeitssensor
-
-### Tinkerforge
-
-- Temperatursensor
-- Feuchtigkeitssensor
