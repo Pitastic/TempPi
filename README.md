@@ -12,7 +12,7 @@ Gedacht ist das System dann als Standalone Lösung für die Anzeige dieser Werte
 
 Vorzugsweise mit Raspbian Jessie
 
-### Bradboard, Verkabelung, Sensoren
+### Breadboard, Verkabelung, Sensoren
 
 Nur für Anschlüsse an die GPIO Schnittstelle
 
