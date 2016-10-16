@@ -20,12 +20,12 @@ Nur für Anschlüsse an die GPIO Schnittstelle
 
 Um die USB-Module mit Python ansteuern zu können:
 
-1. Auf <a href='http://www.tinkerforge.com/de/doc/Downloads.html'>http://www.tinkerforge.com/de/doc/Downloads.html</a> die Bindings für Python herunterladen.
-2. Im Verzeichnis der Bindings `sudo python setup.py install` ausführen.
-
-oder
-
-1. via pip mit `pip install tinkerforge`
+1. Python-Bindungs
+1a. Auf <a href='http://www.tinkerforge.com/de/doc/Downloads.html'>http://www.tinkerforge.com/de/doc/Downloads.html</a> die Bindings für Python herunterladen.
+1b. Im Verzeichnis der Bindings `sudo python setup.py install` ausführen.
+1c. **alternativ:** via pip mit `pip install tinkerforge`
+2. Brick Deamon
+2a. siehe <a href='http://www.tinkerforge.com/de/doc/Software/Brickd_Install_Linux.html#brickd-install-linux'>offizielle Dokumentation</a>
 
 
 
