@@ -16,11 +16,27 @@ Vorzugsweise mit Raspbian Jessie
 
 Nur für Anschlüsse an die GPIO Schnittstelle
 
+### Tinkerforgelib
+
+Um die USB-Module mit Python ansteuern zu können:
+
+1. Auf <a href='http://www.tinkerforge.com/de/doc/Downloads.html'>http://www.tinkerforge.com/de/doc/Downloads.html</a> die Bindings für Python herunterladen.
+2. Im Verzeichnis der Bindings `sudo python setup.py install` ausführen.
+
+oder
+
+1. via pip mit `pip install tinkerforge`
+
 
 
 ## Device Support
 
 ### GPIO
+
+- Temperatursensor
+- Feuchtigkeitssensor
+
+### Tinkerforge
 
 - Temperatursensor
 - Feuchtigkeitssensor
