@@ -18,10 +18,11 @@ if __name__ == "__main__":
 
 	intervall = 60*15 # (15 Minuten)
 
-	#TEMP = Temperatur(1, intervall, runden=3)
-	#HUM = Feuchtigkeit(0, TEMP.wert, intervall, runden=3)
-	TEMP = TinkerforgeTemperature(uids['temperature'],intervall)
-	HUM = TinkerforgeHumidity(uids['humidity'],intervall)
+	# >>> Auskommentieren, je nach Sensornutzung (issue #4)
+	TEMP = Temperatur(1, intervall, runden=3)
+	HUM = Feuchtigkeit(0, TEMP.wert, intervall, runden=3)
+	#TEMP = TinkerforgeTemperature(uids['temperature'],intervall)
+	#HUM = TinkerforgeHumidity(uids['humidity'],intervall)
 
 	i = 0
 

@@ -72,6 +72,8 @@ class Temperatur(analoger_Sensor):
 		# Umwandlung der Voltzahl in Grad Celcius (Places nimmt die erwarteten Nachkommastellen an)
 		kelvin = self.s_volts/0.01
 		celcius = round(kelvin-273.15, self.runden)
+		# Sensorabweichung
+		celcius = celcius-3
 		self.wert = celcius
 		
 
