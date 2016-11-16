@@ -5,7 +5,7 @@ class TinkerforgeSensor(object):
     
     def __init__(self, uid, int_MW=9,Acc=4, host='localhost', port='4223'):
         self.Acc = Acc
-		self.int_MW = int_MW
+	self.int_MW = int_MW
         self.uid = uid
         self.host = host
         self.port = port
