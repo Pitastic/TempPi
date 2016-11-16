@@ -5,13 +5,25 @@ import MySQLdb as mysql
 import spidev
 import time
 import db_handle
-from mysensors import *
+import ConfigParser
+
+from GPIOSensoren import *
+from TinkerforgeSensoren import *
 
 
 if __name__ == "__main__":
+	c = ConfigParser.ConfigParser()
+	c.read('./pw.cfg')
+	uids = c.defaults()
+
 	intervall = 60*15 # (15 Minuten)
+
+	# >>> Auskommentieren, je nach Sensornutzung (issue #4)
 	TEMP = Temperatur(1, intervall, runden=3)
 	HUM = Feuchtigkeit(0, TEMP.wert, intervall, runden=3)
+	#TEMP = TinkerforgeTemperature(uids['temperature'],intervall)
+	#HUM = TinkerforgeHumidity(uids['humidity'],intervall)
+
 	i = 0
 
 	creds = db_handle.Credentials()

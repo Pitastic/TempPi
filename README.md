@@ -11,11 +11,27 @@ Vorzugsweise mit Raspbian Jessie
 - Breadboard, Verkabelung, Sensoren<br>
 Nur für Anschlüsse an die GPIO Schnittstelle
 
+### Tinkerforgelib
+
+Um die USB-Module mit Python ansteuern zu können:
+
+1. Python-Bindungs
+  1. Auf <a href='http://www.tinkerforge.com/de/doc/Downloads.html'>http://www.tinkerforge.com/de/doc/Downloads.html</a> die Bindings für Python herunterladen.
+  2. Im Verzeichnis der Bindings `sudo python setup.py install` ausführen.
+  3. **alternativ:** via pip mit `pip install tinkerforge`
+2. Brick Deamon
+  1. siehe <a href='http://www.tinkerforge.com/de/doc/Software/Brickd_Install_Linux.html#brickd-install-linux'>offizielle Dokumentation</a>
+
 
 
 ## Device Support
 
 ### GPIO
+
+- Temperatursensor
+- Feuchtigkeitssensor
+
+### Tinkerforge
 
 - Temperatursensor
 - Feuchtigkeitssensor
